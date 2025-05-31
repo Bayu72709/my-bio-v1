@@ -1,0 +1,98 @@
+/* style.css */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #ede8d0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.card {
+  background-color: #3e3e3b;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  max-width: 320px;
+  padding: 24px;
+  text-align: center;
+}
+
+.card img {
+  width: 140px; /* Ukuran bisa disesuaikan */
+  height: 140px;
+  border-radius: 50%; /* Membuat gambar bulat */
+  object-fit: cover; /* Memastikan gambar memenuhi lingkaran dengan proporsi yang pas */
+  display: block;
+  margin: 0 auto;
+  border: 3px solid #ccc; /* Opsional: memberi garis tepi */
+}
+
+.card h2 {
+  margin-top: 16px;
+  font-size: 1.5em;
+  color: #f3cb51;
+}
+
+.card p {
+  color: #faf398;
+  font-size: 1em;
+  margin: 12px 0;
+}
+
+.card button {
+  background-color: #3b82f6;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1em;
+}
+
+.card button:hover {
+  background-color: #2563eb;
+}
+
+nav ul li {
+  position: relative;
+}
+
+nav ul li a {
+  color: #25D366; /* slate-300 */
+  font-size: 0.875rem; /* text-sm */
+  font-weight: 500;
+  transition: color 0.3s ease;
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  color: #3b82f6; /* blue-500 */
+}
+
+/* (Opsional) Untuk dropdown nanti */
+nav ul li ul {
+  display: none;
+  position: absolute;
+  margin: 0 auto;
+  top: 2rem;
+  left: 0;
+  background-color: #b6895b;
+  padding: 0.5rem 0;
+  border-radius: 50%;
+  z-index: 100;
+  border: 3px solid #ccc;
+}
+
+nav ul li:hover ul {
+  display: block;
+}
+
+nav ul li ul li {
+  padding: 0.5rem 1rem;
+}
+
+nav ul li ul li a {
+  white-space: nowrap;
+  font-size: 0.875rem;
+}
